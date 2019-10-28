@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau2</title>
+</head>
+<body>
+<script>
+    var arr = [12, 6, 3, 7, 21, 5, 7];
+    var ind = 0;
+
+    function tryRemoveFromArray(array, index) {
+        if (index < 0 || index > array.length) {
+            return array
+        } else {
+            for (index; index < array.length; index++) {
+                array[index] = array[index + 1];
+            }
+            array.pop();
+            return array;
+        }
+    }
+
+    alert("mang moi la " + tryRemoveFromArray(arr, ind));
+</script>
+</body>
+</html>

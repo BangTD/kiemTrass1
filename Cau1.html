@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau1</title>
+</head>
+<body>
+<script>
+    var araay = [10, 5, 2, 8, -1, 6, 8];
+    var araay1 = new Array();
+    function findMinScore(arr) {
+        var min = arr[0];
+        if (arr.length == 0) {
+            return alert("Khong ton tai mang");
+        } else {
+            for (i = 1; i < arr.length; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+    }
+
+    alert("So thap nhat trong mang la : " + findMinScore(araay1));
+
+</script>
+</body>
+</html>
